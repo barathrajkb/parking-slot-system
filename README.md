@@ -159,8 +159,6 @@ Open the circuit in [CircuitVerse](https://circuitverse.org/) to verify logic be
 ---
 
 ## 👤 Author
-*Hardware-Only Automated Car Parking Slot Management Project — 2025*
-
 **Barath Raj KB**  
 B.E. Electronics & Communication Engineering
 
