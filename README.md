@@ -95,12 +95,12 @@ The 3-bit output feeds a standard **BCD-to-7-segment decoder IC** (e.g., 74LS47 
 ## 📐 Circuit Diagrams
 
 ### LED Status Logic
-![LED Status Circuit](ParkingLED.png)
+![LED Status Circuit](circuits/ParkingLED.png)
 
 *Combinational circuit controlling RGB LEDs for each of the 4 parking slots based on sensor and reservation inputs.*
 
 ### Free Slot Counter
-![Counter Circuit](7SegmentCircuit.png)
+![Counter Circuit](circuits/7SegmentCircuit.png)
 
 *AND-OR combinational network encoding the number of free slots as a 3-bit value (Y0, Y1, Y2) for the 7-segment display.*
 
@@ -132,7 +132,7 @@ The 3-bit output feeds a standard **BCD-to-7-segment decoder IC** (e.g., 74LS47 
 ├── README.md
 ├── circuits/
 │   ├── ParkingLED.png       # LED status indicator circuit
-│   └── DCD.png              # Free slot counter / combinational decoder
+│   └── 7SegmentCircuit.png  # Free slot counter / combinational decoder
 ├── docs/
 │   ├── truth_tables.md      # Full truth tables for both circuits
 │   └── boolean_expressions.md  # Minimized SOP expressions (K-map derived)
