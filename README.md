@@ -58,7 +58,7 @@ Each of the 4 parking slots has its status encoded and displayed via RGB LEDs us
 - **Outputs:** 4 RGB LED pairs driven by AND/OR gate logic
 - **Logic:** Each LED color is driven by a minimal Boolean expression derived from the slot's occupancy and reservation state
 
-### 2. Free Slot Counter — Combinational Decoder (`DCD.png`)
+### 2. Free Slot Counter — Combinational Decoder (`7SegmentCounter.png`)
 
 A combinational logic network that encodes the number of free slots (0–4) into a **3-bit binary output** (Y2, Y1, Y0).
 
@@ -74,7 +74,7 @@ A combinational logic network that encodes the number of free slots (0–4) into
 | 3          | 0  | 1  | 1  |
 | 4          | 1  | 0  | 0  |
 
-The 3-bit output feeds a standard **BCD-to-7-segment decoder IC** (e.g., 74LS47 / CD4511), which directly drives the 7-segment display.
+The 3-bit output feeds a standard **BCD-to-7-segment decoder IC** (e.g., 74LS47), which directly drives the 7-segment display.
 
 ---
 
