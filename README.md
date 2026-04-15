@@ -162,7 +162,7 @@ Open the circuit in [CircuitVerse](https://circuitverse.org/) to verify logic be
 **Barath Raj KB**  
 B.E. Electronics & Communication Engineering
 
-**Bhuvishaa Sri M A**
+**Bhuvishaa Sri M A** 
 B.E. Electronics & Communication Engineering
 
 ---
