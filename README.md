@@ -23,7 +23,7 @@ IR Sensors (×4)
       │
       ▼
 ┌─────────────────────┐        ┌───────────────────────────┐
-│   LED Status Logic  │        │  Slot Counter (DCD)       │
+│   LED Status Logic  │        │  Slot Counter             │
 │  (ParkingLED.png)   │        │  Combinational Encoder    │
 │                     │        │  → 3-bit output (Y0,Y1,Y2)│
 │  Per-slot:          │        │  (7SegmentCircuit.png)    │
@@ -64,7 +64,7 @@ A combinational logic network that encodes the number of free slots (0–4) into
 
 - **Inputs:** 4 IR sensor signals (S0–S3), where `0 = Free`, `1 = Occupied`
 - **Outputs:** 3-bit binary count of free slots → fed to BCD-to-7-segment decoder
-- **Implementation:** Multi-level AND-OR combinational network (see `DCD.png`)
+- **Implementation:** Multi-level AND-OR combinational network (see `7SegmentCounter.png`)
 
 | Free Slots | Y2 | Y1 | Y0 |
 |------------|----|----|----|
@@ -110,7 +110,7 @@ The 3-bit output feeds a standard **BCD-to-7-segment decoder IC** (e.g., 74LS47)
 
 1. **Sensing:** IR sensors at each slot output a logic signal — `LOW` when a car is present, `HIGH` when free.
 2. **LED Logic:** The LED status circuit processes each sensor output (along with a reservation flag) through gate logic to select the correct LED color per slot.
-3. **Counting:** The DCD circuit takes all 4 sensor outputs and computes the number of free slots via a combinational sum-of-products expression, producing a 3-bit binary result.
+3. **Counting:** The Slot Counter circuit takes all 4 sensor outputs and computes the number of free slots via a combinational sum-of-products expression, producing a 3-bit binary result.
 4. **Display:** The 3-bit output connects to a BCD-to-7-segment decoder, which drives the 7-segment display to show the live count of available slots.
 
 ---
