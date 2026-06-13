@@ -1,5 +1,7 @@
 # 🚗 Hardware-Only Automated Car Parking Slot Management System
 
+[![Blog Post](https://img.shields.io/badge/Blog-Read%20the%20Article-blue)](https://barathrajkb.hashnode.dev/when-gates-replace-code-a-hardware-only-parking-management-system)
+
 > A fully combinational, hardware-based 4-slot parking management system — **no microcontroller, no FPGA, no firmware**. Pure 74XX-series logic gates.
 
 ---
