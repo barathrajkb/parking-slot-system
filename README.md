@@ -133,9 +133,6 @@ The 3-bit output feeds a standard **BCD-to-7-segment decoder IC** (e.g., 74LS47)
 ├── circuits/
 │   ├── ParkingLED.png       # LED status indicator circuit
 │   └── 7SegmentCircuit.png  # Free slot counter / combinational decoder
-├── docs/
-│   ├── truth_tables.md      # Full truth tables for both circuits
-│   └── boolean_expressions.md  # Minimized SOP expressions (K-map derived)
 └── simulation/              # CircuitVerse simulation files
 ```
 
